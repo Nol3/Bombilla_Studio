@@ -98,4 +98,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5579011650493201205, guid: 66cd73184582a22458a790ce34f2a138, type: 3}
-  ratio: 4.96
+  ratio: 1
