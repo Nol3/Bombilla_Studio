@@ -8,11 +8,11 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public int time = 30;
-
     public bool gameover;
-
     public int dificultad = 1;
     public float viralidad = 50;
+    //Terminales
+    GameObject[] arrayTerminal;
 
     void Awake()
     {
@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        arrayTerminal = GameObject.FindGameObjectsWithTag("Terminal");
         StartCoroutine(Contador());
     }
 
@@ -38,6 +39,18 @@ public class GameManager : MonoBehaviour
         {
             gameover = true;
            //IManager.Instance.GameOver();
+        }
+    }
+
+    public void ResetTerminals() 
+    {
+        int i = arrayTerminal.Length;
+        Terminal codigo;
+        while(i >= 0)
+        {
+            codigo = arrayTerminal[i].GetComponent<Terminal>();
+            codigo.available = true;
+            i--;
         }
     }
     /*public void JuagarOtra()
