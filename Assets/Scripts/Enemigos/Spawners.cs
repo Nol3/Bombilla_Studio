@@ -5,13 +5,19 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
+    [SerializeField] int tiempo = 1;
+
+    void Start () 
+    {
+        StartCoroutine(Spawn());
+    }
 
     IEnumerator Spawn()
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
-            Instantiate(enemyPrefab);
+            yield return new WaitForSeconds(tiempo);
+            Instantiate(enemyPrefab, transform.position, Quaternion.identity);
         }
     }
 
