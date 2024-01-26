@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] GameObject enemyPrefab;
     [Range(1, 10)][SerializeField] float ratio = 1;
 
-    IEnumerator Spawner()
+    IEnumerator Spawn()
     {
         while (true)
         {
