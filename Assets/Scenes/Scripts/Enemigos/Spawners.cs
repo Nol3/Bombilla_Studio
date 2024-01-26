@@ -14,7 +14,6 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(1 / ratio);
             Instantiate(enemyPrefab);
         }
-
     }
 
 }

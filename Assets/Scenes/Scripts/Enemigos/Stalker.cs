@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class Stalker : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int salud = 1;
+    [SerializeField] float speed = 1;
+    Transform player;
+
     void Start()
     {
-        
+        player = FindObjectOfType<Player>().transform;
+        /*GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawners");
+        int random = Random.Range(0, spawns.Length);
+        transform.position = spawns[random].transform.position;
+        */
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector2 direccion = player.position - transform.position;
+        transform.position += (Vector3)direccion.normalized * Time.deltaTime * speed;
+
+        if (salud <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            //collision.GetComponent<Player>().TakeDamage();
+        }
+    }
+    public void TakeDamage()
+    {
+        salud--;
     }
 }
