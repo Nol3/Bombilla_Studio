@@ -21,7 +21,7 @@ public class Terminal : MonoBehaviour
     {
         if (collision.CompareTag("Player") && available == true)
         {
-            GameManager.Instance.viralidad += aumento;
+            gameManager.viralidad += aumento;
             gameManager.ResetTerminals();
             available = false;
         }

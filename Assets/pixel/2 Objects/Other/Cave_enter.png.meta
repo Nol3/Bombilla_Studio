@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cave_enter_0: -6692948807339045768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

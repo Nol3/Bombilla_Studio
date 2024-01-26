@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fog_04_0: 2484730025819607362
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

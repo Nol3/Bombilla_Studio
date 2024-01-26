@@ -44,12 +44,13 @@ public class GameManager : MonoBehaviour
 
     public void ResetTerminals() 
     {
-        int i = arrayTerminal.Length;
-        Terminal codigo;
+        int i = arrayTerminal.Length - 1;
+       // Terminal codigo;
         while(i >= 0)
         {
-            codigo = arrayTerminal[i].GetComponent<Terminal>();
-            codigo.available = true;
+            arrayTerminal[i].available = true;
+            //codigo = arrayTerminal[i].GetComponent<Terminal>();
+            //codigo.available = true;
             i--;
         }
     }
