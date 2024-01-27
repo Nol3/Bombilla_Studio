@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public int time = 30;
+    public int time = 0;
     public bool gameover;
     public float dificultad = 1;
     //Gestión viralidad
@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public float viralMax = 100; // La máxima, el tope
     public float viralLosing = 10; // limite a partir del cual estás a punto de morirte
     public float viralBurning = 80; // Limite a partir del cual te quemas
+
+    [SerializeField] int tiempo_burning = 5;
+    bool burning = false;
     //Terminales
     GameObject[] arrayTerminal;
 
@@ -51,20 +54,39 @@ public class GameManager : MonoBehaviour
         {
             realentizar = false;
             StartCoroutine(Realentizar_enemigos());
+
+        }
+        if (viralidad == 0) 
+        {
+            SceneManager.LoadScene("4.2-Olvido");
+        }
+        if (viralidad >= viralBurning) 
+        {
+            burning = true;
+        }
+        //Si se pasa mucho tiempo en la viralidad muy alta se tiene que quemar
+
+    }
+
+    IEnumerator Burning()
+    {
+        while(tiempo_burning >= 0 && burning == true)
+        {
+            tiempo_burning--;
+            yield return new WaitForSeconds(1);
+            if (tiempo_burning == 0)
+            {
+                SceneManager.LoadScene("4.1-Burnt");
+            }
         }
     }
 
     IEnumerator Contador()
     {
-        while (time > 0)
+        while (true)
         {
             yield return new WaitForSeconds(1);
-            time--;
-        }
-        if (time <= 0)
-        {
-            gameover = true;
-           //IManager.Instance.GameOver();
+            time++;
         }
     }
 
@@ -94,9 +116,19 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(time_realentizar);
         enemy_speed = original;
     }
-    /*public void JuagarOtra()
+    //Manejo de escenas
+
+    public void Inicio_Selector()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("2-Selector");
     }
-    */
+    public void Instrucciones_Game()
+    {
+        SceneManager.LoadScene("4-Game");
+    }
+    
+    public void Replay()
+    {
+        SceneManager.LoadScene("1-Inicio");
+    }
 }

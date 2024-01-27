@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -38,6 +39,9 @@ public class Player : MonoBehaviour
     [SerializeField] float h_invert;
     [SerializeField] float v_invert;
     [SerializeField] float tiempo_invertido = 5;
+
+    //Daño y viralidad
+    [SerializeField] float damage_viralidad = 10;    
 
     // Start is called before the first frame update
     void Start()
@@ -104,14 +108,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage()
     {
-        Health--;
-        if (Health < 0)
-        {
-            if (Health <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
+        GameManager.Instance.viralidad -= damage_viralidad;
     }
 
     IEnumerator MasCadencia()
