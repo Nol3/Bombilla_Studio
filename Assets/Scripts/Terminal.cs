@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Terminal : MonoBehaviour
 {
     [SerializeField] float aumento = 10;
     public bool available = true;
-    SpriteRenderer spriteRenderer;
     [SerializeField] Transform Enemigo_terminal;
+    [SerializeField] Sprite apagada;
+    [SerializeField] Sprite encendida;
 
     void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = encendida;
     }
 
     void Update()
@@ -19,10 +21,11 @@ public class Terminal : MonoBehaviour
         //para comprobar si las terminales están desactivadas
         if (available == false)
         {
-            spriteRenderer.color = Color.red;
-        } else if (available == true) 
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = apagada;
+        }
+        else if (available == true) 
         {
-            spriteRenderer.color = Color.green;
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = encendida;
         }
     }
  

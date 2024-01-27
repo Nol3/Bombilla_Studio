@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 40851f89a4c0e2340b13ca512120f9c6
+guid: 0448f6ac4c0f3c944ab156605f786580
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7394439848223957972
-    second: Fuego_0
-  - first:
-      213: -8423817402011037695
-    second: Fuego_1
-  - first:
-      213: 5335303814960841459
-    second: Fuego_2
+      213: 1787278866399553552
+    second: Desalecar_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,34 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fuego_0
+      name: Desalecar_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 94
-        width: 48
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d3e1625dd35e9660800000000000000
-      internalID: 7394439848223957972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego_1
-      rect:
-        serializedVersion: 2
-        x: 21
         y: 0
-        width: 99
-        height: 164
+        width: 218
+        height: 219
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,29 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 100d06444b6981b80800000000000000
-      internalID: -8423817402011037695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fuego_2
-      rect:
-        serializedVersion: 2
-        x: 92
-        y: 97
-        width: 49
-        height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f207835d8eca0a40800000000000000
-      internalID: 5335303814960841459
+      spriteID: 018ee4ad8a0bdc810800000000000000
+      internalID: 1787278866399553552
       vertices: []
       indices: 
       edges: []
@@ -181,17 +133,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: de432efc063658b4899332de9d0c69f7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Fuego_0: 7394439848223957972
-      Fuego_1: -8423817402011037695
-      Fuego_2: 5335303814960841459
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
