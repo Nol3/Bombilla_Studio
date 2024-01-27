@@ -17,6 +17,5 @@ public class Aceleron : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        
     }
 }

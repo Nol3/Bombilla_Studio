@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform bulletPrefab;
     bool gunLoaded = true;
     [SerializeField] float fireRate = 1;
-    [SerializeField] int Health = 5;
+    [SerializeField] int Health = 10;
 
     //PowerUps
 
@@ -28,6 +28,10 @@ public class Player : MonoBehaviour
     [SerializeField] float aumento_cadencia = 3;
     [SerializeField] float tiempo_cadencia = 5;
 
+        //Decelerar
+    public bool decelerar = false;
+    [SerializeField] float disminucion_speed = 3;
+    [SerializeField] float tiempo_decelerar = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -72,6 +76,12 @@ public class Player : MonoBehaviour
             masCadencia = false;
             StartCoroutine(MasCadencia());
         }
+        //Debuff Decelerar
+        if (decelerar == true)
+        {
+            decelerar = false;
+            StartCoroutine(Decelerar());
+        }
     }
 
     IEnumerator ReloadGun()
@@ -85,7 +95,10 @@ public class Player : MonoBehaviour
         Health--;
         if (Health < 0)
         {
-            // Game over
+            if (Health <= 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 
@@ -102,6 +115,13 @@ public class Player : MonoBehaviour
         float originalspeed = speed;
         speed *= aumento_speed;
         yield return new WaitForSeconds(tiempo_aceleron);
+        speed = originalspeed;
+    }
+    IEnumerator Decelerar()
+    {
+        float originalspeed = speed;
+        speed = disminucion_speed;
+        yield return new WaitForSeconds(tiempo_decelerar);
         speed = originalspeed;
     }
 }
