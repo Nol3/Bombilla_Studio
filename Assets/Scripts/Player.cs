@@ -18,9 +18,15 @@ public class Player : MonoBehaviour
 
     //PowerUps
 
+        //Aceleron
     public bool aceleron = false;
-    [SerializeField] float aumento_speed = 10;
-    [SerializeField] float tiempo_aceleron = 10;
+    [SerializeField] float aumento_speed = 5;
+    [SerializeField] float tiempo_aceleron = 5;
+
+        //MasCadencia
+    public bool masCadencia = false;
+    [SerializeField] float aumento_cadencia = 3;
+    [SerializeField] float tiempo_cadencia = 5;
 
 
     // Start is called before the first frame update
@@ -60,6 +66,12 @@ public class Player : MonoBehaviour
             aceleron = false; 
             StartCoroutine(Aceleron());
         }
+        //Powerup MasCadencia
+        if (masCadencia == true)
+        {
+            masCadencia = false;
+            StartCoroutine(MasCadencia());
+        }
     }
 
     IEnumerator ReloadGun()
@@ -75,6 +87,14 @@ public class Player : MonoBehaviour
         {
             // Game over
         }
+    }
+
+    IEnumerator MasCadencia()
+    {
+        float original_fireRate = fireRate;
+        fireRate *= aumento_cadencia;
+        yield return new WaitForSeconds(tiempo_cadencia);
+        fireRate = original_fireRate;
     }
 
     IEnumerator Aceleron() 
