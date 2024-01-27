@@ -10,7 +10,7 @@ public class Stalker : MonoBehaviour
     void Start()
     {
         player = FindFirstObjectByType<Player>().transform;
-        GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawners");
+        GameObject[] spawns = GameObject.FindGameObjectsWithTag("Spawner_Stalker");
         int random = Random.Range(0, spawns.Length);
         transform.position = spawns[random].transform.position;
     }
