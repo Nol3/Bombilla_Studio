@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 
     public int time = 0;
     public bool gameover;
-    public float dificultad = 1;
     //Gestión viralidad
     public float viralidad = 95; // con la que se empieza, la podemos cambiar
     public float viralMax = 100; // La máxima, el tope
@@ -29,6 +28,10 @@ public class GameManager : MonoBehaviour
     public bool realentizar = false;
     public float enemy_speed = 1;
     [SerializeField] int time_realentizar = 5;
+
+    //Gestion de la dificultad
+    public float dificultad = 1;
+
 
     void Awake()
     {
