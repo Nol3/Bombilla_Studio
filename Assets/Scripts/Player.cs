@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     [SerializeField] Transform bulletPrefab;
     bool gunLoaded = true;
     [SerializeField] float fireRate = 1;
-    [SerializeField] int Health = 10;
 
     //PowerUps
 
