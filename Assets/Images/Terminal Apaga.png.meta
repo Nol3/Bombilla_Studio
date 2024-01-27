@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terminal Apaga_0: -8306209766362290445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Porta\xF1_0": 663471332541576187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
