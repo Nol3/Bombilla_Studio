@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Stalker : MonoBehaviour
 {
-    [SerializeField] int salud = 1;
-    [SerializeField] float speed = 1;
+    [SerializeField]int salud = 1;
+    [SerializeField]float speed = 1;
     Transform player;
 
     void Start()
@@ -20,21 +20,20 @@ public class Stalker : MonoBehaviour
     {
         Vector2 direccion = player.position - transform.position;
         transform.position += (Vector3)direccion.normalized * Time.deltaTime * speed;
-
-        if (salud <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            //collision.GetComponent<Player>().TakeDamage();
+            collision.GetComponent<Player>().TakeDamage();
         }
     }
     public void TakeDamage()
     {
         salud--;
+        if (salud <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

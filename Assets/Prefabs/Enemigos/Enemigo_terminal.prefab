@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5438154818622550157}
   m_Layer: 0
   m_Name: Enemigo_terminal
-  m_TagString: Enemigo_terminal
+  m_TagString: enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  salud: 1
 --- !u!61 &-8477726579398006892
 BoxCollider2D:
   m_ObjectHideFlags: 0

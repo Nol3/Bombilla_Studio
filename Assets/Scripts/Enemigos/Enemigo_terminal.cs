@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Enemigo_terminal : MonoBehaviour
 {
-    [SerializeField] float speed = 1.25f;
+    [SerializeField]float speed = 1.25f;
+    [SerializeField]int salud = 1;
     Transform Terminal;
     bool available = false;
     SpriteRenderer spriteRenderer;
@@ -34,20 +35,28 @@ public class Enemigo_terminal : MonoBehaviour
             spriteRenderer.color = Color.green;
         }
     }
+    public void TakeDamage()
+    {
+        salud--;
+        if (salud <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.CompareTag("Terminal") && available == false)
-    //    {
-    //        GameManager.Instance.ResetTerminals();
-    //        StartCoroutine(WaitAndSetAvailable(5f));
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Terminal") && available == false)
+        {
+            GameManager.Instance.ResetTerminals();
+            StartCoroutine(WaitAndSetAvailable(5f));
+        }
+    }
 
-    //private IEnumerator WaitAndSetAvailable(float waitTime)
-    //{
-    //    yield return new WaitForSeconds(waitTime);
-    //    available = true;
-    //    Destroy(gameObject);
-    //}
+    private IEnumerator WaitAndSetAvailable(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        available = true;
+        Destroy(gameObject);
+    }
 }

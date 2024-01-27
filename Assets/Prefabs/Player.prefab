@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   aim: {fileID: 1162360689067756157}
-  bulletPrefab: {fileID: 7809810282855587855, guid: 97d16bfcbfb566a43a3bcc8fb209183e, type: 3}
+  bulletPrefab: {fileID: 3947639326319635906, guid: 9b74ecb8ae7d54e4e98a7ca99207d7a7, type: 3}
   fireRate: 1
   Health: 5
   PowerShot: 0

@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Spawners
   - Terminal
-  - Enemigo_terminal
+  - enemigo
   layers:
   - Default
   - TransparentFX

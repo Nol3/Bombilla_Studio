@@ -34,7 +34,7 @@ public class Terminal : MonoBehaviour
             //GameManager.Instance.ResetTerminals();
             available = false;
         } 
-        if (collision.CompareTag("Enemigo_terminal") && available == true)
+        if (collision.CompareTag("enemigo") && available == true)
         {
             //GameManager.Instance.ResetTerminals();
             available = false;

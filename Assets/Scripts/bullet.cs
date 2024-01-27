@@ -9,7 +9,7 @@ public class bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this.gameObject, 5); // Destroy the bullet prefab after 10 seconds
+        Destroy(gameObject, 5);   
     }
 
     // Update is called once per frame
@@ -20,10 +20,18 @@ public class bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.CompareTag("Enemy"))
-        //{
-        //    collision.GetComponent<Enemy>().TakeDamage();
-        //    Destroy(gameObject);
-        //}
+        if (collision.CompareTag("enemigo"))
+        {
+            if (collision.TryGetComponent<Enemigo_terminal>(out Enemigo_terminal enemigo))
+            {
+                enemigo.TakeDamage();
+            }
+            else if (collision.TryGetComponent<Stalker>(out Stalker seguidor))
+            {
+                seguidor.TakeDamage();
+            }
+            Debug.Log("E");
+            Destroy(gameObject);
+        }
     }
 }
