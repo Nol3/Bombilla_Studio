@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Aceleron : MonoBehaviour
 {
-    [SerializeField] float aumento_speed = 10f;
-    [SerializeField] int tiempo_aceleron = 5;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -22,6 +22,11 @@ public class GameManager : MonoBehaviour
     float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
     float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
 
+    //Velocidad enemiga
+    public bool realentizar = false;
+    public float enemy_speed = 1;
+    [SerializeField] int time_realentizar = 5;
+
     void Awake()
     {
         if (Instance == null)
@@ -39,6 +44,14 @@ public class GameManager : MonoBehaviour
         arrayTerminal = GameObject.FindGameObjectsWithTag("Terminal");
         StartCoroutine(Contador());
         StartCoroutine(CaidaViralidad());
+    }
+    void Update ()
+    {
+        if (realentizar == true)
+        {
+            realentizar = false;
+            StartCoroutine(Realentizar_enemigos());
+        }
     }
 
     IEnumerator Contador()
@@ -72,6 +85,14 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(frecuencia);
             viralidad -= disminucion;
         }
+    }
+
+    IEnumerator Realentizar_enemigos()
+    {
+        float original = enemy_speed;
+        enemy_speed = 0.2f;
+        yield return new WaitForSeconds(time_realentizar);
+        enemy_speed = original;
     }
     /*public void JuagarOtra()
     {

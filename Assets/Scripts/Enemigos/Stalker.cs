@@ -5,7 +5,6 @@ using UnityEngine;
 public class Stalker : MonoBehaviour
 {
     [SerializeField]int salud = 1;
-    [SerializeField]float speed = 1;
     Transform player;
 
     void Start()
@@ -19,7 +18,7 @@ public class Stalker : MonoBehaviour
     void Update()
     {
         Vector2 direccion = player.position - transform.position;
-        transform.position += (Vector3)direccion.normalized * Time.deltaTime * speed;
+        transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

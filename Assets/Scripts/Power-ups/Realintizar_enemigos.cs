@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MasCadencia : MonoBehaviour
+public class Realintizar_enemigos : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -10,9 +10,9 @@ public class MasCadencia : MonoBehaviour
         {
             if (collision.TryGetComponent<Player>(out Player player))
             {
-                player.masCadencia = true;
-                Destroy(gameObject);
+                GameManager.Instance.realentizar = true;
             }
+            Destroy(gameObject);
         }
     }
 }

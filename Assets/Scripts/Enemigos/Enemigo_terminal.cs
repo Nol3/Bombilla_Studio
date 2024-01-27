@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class Enemigo_terminal : MonoBehaviour
 {
-    [SerializeField]float speed = 1.25f;
     [SerializeField]int salud = 1;
     Transform Terminal;
     bool available = false;
     SpriteRenderer spriteRenderer;
     //[SerializeField] float waitTime = 5.5f;
 
-    // Start is called before the first frame update
     void Start()
     {
         Terminal = FindFirstObjectByType<Terminal>().transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         //movimiento del enemigo
         Vector2 direccion = Terminal.position - transform.position;
-        transform.position += (Vector3)direccion.normalized * Time.deltaTime * speed;
+        transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
 
         //para comprobar si las terminales están desactivadas
         if (available == false)
