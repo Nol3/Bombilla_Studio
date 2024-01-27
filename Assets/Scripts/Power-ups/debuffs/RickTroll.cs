@@ -13,11 +13,20 @@ public class RickTroll : MonoBehaviour
         {
             if (collision.TryGetComponent<Player>(out Player player))
             {
-                rickTroll.SetActive(true);
-                rickTroll1.SetActive(true);
+                StartCoroutine(ActivateAndDeactivate());
                 Destroy(gameObject);
             }
             
         }
+    }
+    IEnumerator ActivateAndDeactivate()
+    {
+        rickTroll.SetActive(true);
+        rickTroll1.SetActive(true);
+
+        yield return new WaitForSeconds(5);
+
+        rickTroll.SetActive(false);
+        rickTroll1.SetActive(false);
     }
 }
