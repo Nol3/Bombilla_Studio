@@ -31,12 +31,12 @@ public class Terminal : MonoBehaviour
         if (collision.CompareTag("Player") && available == true)
         {
             GameManager.Instance.viralidad += aumento;
-            GameManager.Instance.ResetTerminals();
+            //GameManager.Instance.ResetTerminals();
             available = false;
         } 
         if (collision.CompareTag("Enemigo_terminal") && available == true)
         {
-            GameManager.Instance.ResetTerminals();
+            //GameManager.Instance.ResetTerminals();
             available = false;
             StartCoroutine(WaitAndSetAvailable(5f));
         }

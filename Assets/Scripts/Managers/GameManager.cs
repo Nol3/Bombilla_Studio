@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     public int time = 30;
     public bool gameover;
-    public int dificultad = 1;
+    public float dificultad = 1;
     //Gestión viralidad
     public float viralidad = 95; // con la que se empieza, la podemos cambiar
     public float viralMax = 100; // La máxima, el tope
@@ -22,12 +22,17 @@ public class GameManager : MonoBehaviour
     float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
     float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
 
+    //Mantener viralidad, tiempo y dificultad entre escenas
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
         }
+        // Recuperación de variables cada vez que se cambie de zona
+        viralidad = PlayerPrefs.GetFloat("viralidad", viralidad);
+        dificultad = PlayerPrefs.GetFloat("dificultad", dificultad);
+        time = PlayerPrefs.GetInt("time", time);
     }
 
     void Start()
@@ -57,7 +62,6 @@ public class GameManager : MonoBehaviour
         while(i >= 0)
         {
            arrayTerminal[i].GetComponent<Terminal>().available = true;
-
             i--;
         }
     }
