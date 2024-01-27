@@ -35,8 +35,6 @@ public class Player : MonoBehaviour
 
         //Invertir
     public bool invertido = false;
-    [SerializeField] float h_invert;
-    [SerializeField] float v_invert;
     [SerializeField] float tiempo_invertido = 5;
 
     // Start is called before the first frame update
@@ -91,9 +89,17 @@ public class Player : MonoBehaviour
         //Invertir
         if (invertido == true)
         {
-            invertido = false;
             StartCoroutine(invertir());
         }
+        else
+        {
+            h = Input.GetAxis("Horizontal");
+            v = Input.GetAxis("Vertical");
+        }
+        move.x = h;
+        move.y = v;
+
+        transform.position += move * Time.deltaTime * speed;
     }
 
     IEnumerator ReloadGun()
@@ -139,18 +145,13 @@ public class Player : MonoBehaviour
 
     IEnumerator invertir()
     {
-        // Guardar los valores originales
-        float originalH = h;
-        float originalV = v;
+        h = Input.GetAxis("Vertical");
+        v = Input.GetAxis("Horizontal");
+        move.x = h;
+        move.y = v;
 
-        // Invertir los controles
-        h = originalV;
-        v = originalH;
-
+        transform.position += move * Time.deltaTime * speed;
         yield return new WaitForSeconds(tiempo_invertido);
-
-        // Restaurar los controles a su estado original
-        h = originalH;
-        v = originalV;
+        invertido = false;
     }
 }
