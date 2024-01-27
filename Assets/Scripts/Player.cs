@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage()
     {
-        GameManager.Instance.viralidad -= damage_viralidad;
+        GameManager.Instance.viralidad -= damage_viralidad*GameManager.Instance.dificultad;
     }
 
     IEnumerator MasCadencia()

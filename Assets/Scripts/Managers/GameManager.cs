@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     //Gestion de la dificultad
     public float dificultad = 1;
-
+    public int time_dificultad = 10;
 
     void Awake()
     {
@@ -50,9 +50,11 @@ public class GameManager : MonoBehaviour
         arrayTerminal = GameObject.FindGameObjectsWithTag("Terminal");
         StartCoroutine(Contador());
         StartCoroutine(CaidaViralidad());
+        StartCoroutine(SubirDificultald());
     }
     void Update ()
     {
+        enemy_speed = enemy_speed * dificultad;
         if (realentizar == true)
         {
             realentizar = false;
@@ -133,5 +135,15 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene("1-Inicio");
+    }
+
+    //Gestion de la dificultad
+    IEnumerator SubirDificultald()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(time_dificultad);
+            dificultad *= 1.5f;
+        }
     }
 }
