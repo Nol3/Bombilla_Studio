@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
         }
         if (viralidad == 0) 
         {
-            SceneManager.LoadScene("4.2-Olvido");
+            SceneManager.LoadScene("5.2-Olvido");
         }
         if (viralidad >= viralBurning) 
         {
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             if (tiempo_burning == 0)
             {
-                SceneManager.LoadScene("4.1-Burnt");
+                SceneManager.LoadScene("5.1-Burnt");
             }
         }
     }
