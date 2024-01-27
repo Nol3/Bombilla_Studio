@@ -10,9 +10,17 @@ public class GameManager : MonoBehaviour
     public int time = 30;
     public bool gameover;
     public int dificultad = 1;
-    public float viralidad = 50;
+    //Gestión viralidad
+    public float viralidad = 95; // con la que se empieza, la podemos cambiar
+    public float viralMax = 100; // La máxima, el tope
+    public float viralLosing = 10; // limite a partir del cual estás a punto de morirte
+    public float viralBurning = 80; // Limite a partir del cual te quemas
     //Terminales
     GameObject[] arrayTerminal;
+
+    //Caida viralidad
+    float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
+    float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
 
     void Awake()
     {
@@ -26,6 +34,7 @@ public class GameManager : MonoBehaviour
     {
         arrayTerminal = GameObject.FindGameObjectsWithTag("Terminal");
         StartCoroutine(Contador());
+        StartCoroutine(CaidaViralidad());
     }
 
     IEnumerator Contador()
@@ -50,6 +59,15 @@ public class GameManager : MonoBehaviour
            arrayTerminal[i].GetComponent<Terminal>().available = true;
 
             i--;
+        }
+    }
+
+    IEnumerator CaidaViralidad() 
+    {
+        while (true) 
+        {
+            yield return new WaitForSeconds(frecuencia);
+            viralidad -= disminucion;
         }
     }
     /*public void JuagarOtra()
