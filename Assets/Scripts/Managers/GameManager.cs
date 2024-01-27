@@ -22,14 +22,13 @@ public class GameManager : MonoBehaviour
     float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
     float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
 
-    //Mantener viralidad, tiempo y dificultad entre escenas
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
         }
-        // Recuperación de variables cada vez que se cambie de zona
+        //Mantener viralidad, tiempo y dificultad entre escenas
         viralidad = PlayerPrefs.GetFloat("viralidad", viralidad);
         dificultad = PlayerPrefs.GetFloat("dificultad", dificultad);
         time = PlayerPrefs.GetInt("time", time);

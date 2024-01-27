@@ -15,7 +15,13 @@ public class Player : MonoBehaviour
     bool gunLoaded = true;
     [SerializeField] float fireRate = 1;
     [SerializeField] int Health = 5;
-    [SerializeField] bool PowerShot;
+
+    //PowerUps
+
+    public bool aceleron = false;
+    [SerializeField] float aumento_speed = 10;
+    [SerializeField] float tiempo_aceleron = 10;
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +54,12 @@ public class Player : MonoBehaviour
             Instantiate(bulletPrefab, transform.position, targetRotation);
             StartCoroutine(ReloadGun());
         }
+        //Powerup Aceleron
+        if(aceleron == true)
+        {
+            aceleron = false; 
+            StartCoroutine(Aceleron());
+        }
     }
 
     IEnumerator ReloadGun()
@@ -65,39 +77,11 @@ public class Player : MonoBehaviour
         }
     }
 
-
-//    private void OnTriggerEnter2D(Collider2D collision)
-//    {
-//        if (collision.CompareTag("PowerUp"))
-//        {
-//            switch (collision.GetComponent<PowerUp>().powerUpType)
-//            {
-//                case PowerUp.PowerUpType.FireRateIncrease:
-//                    {
-//                        fireRate++;
-//                        break;
-//                    }
-//                case PowerUp.PowerUpType.PowerShot:
-//                    {
-//                        PowerShot = true;
-//                        break;
-//                    }
-//                //case PowerUp.PowerUpType.SpeedBoost:
-//                //    {
-//                //        // + velocidad
-//                //        break;
-//                //    }
-//                //case PowerUp.PowerUpType.HealthBoost:
-//                //    {
-//                //        // + salud
-//                //        break;
-//                //    }
-//                default:
-//                    {
-//                        // Caso por defecto si no coincide con ningún tipo de power-up conocido
-//                        break;
-//                    }
-//            }
-//        }
-//    }
+    IEnumerator Aceleron() 
+    {
+        float originalspeed = speed;
+        speed *= aumento_speed;
+        yield return new WaitForSeconds(tiempo_aceleron);
+        speed = originalspeed;
+    }
 }
