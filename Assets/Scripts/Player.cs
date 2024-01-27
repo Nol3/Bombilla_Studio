@@ -33,6 +33,12 @@ public class Player : MonoBehaviour
     [SerializeField] float disminucion_speed = 3;
     [SerializeField] float tiempo_decelerar = 5;
 
+        //Invertir
+    public bool invertido = false;
+    [SerializeField] float h_invert;
+    [SerializeField] float v_invert;
+    [SerializeField] float tiempo_invertido = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -82,6 +88,12 @@ public class Player : MonoBehaviour
             decelerar = false;
             StartCoroutine(Decelerar());
         }
+        //Invertir
+        if (invertido == true)
+        {
+            invertido = false;
+            StartCoroutine(invertir());
+        }
     }
 
     IEnumerator ReloadGun()
@@ -123,5 +135,22 @@ public class Player : MonoBehaviour
         speed = disminucion_speed;
         yield return new WaitForSeconds(tiempo_decelerar);
         speed = originalspeed;
+    }
+
+    IEnumerator invertir()
+    {
+        // Guardar los valores originales
+        float originalH = h;
+        float originalV = v;
+
+        // Invertir los controles
+        h = originalV;
+        v = originalH;
+
+        yield return new WaitForSeconds(tiempo_invertido);
+
+        // Restaurar los controles a su estado original
+        h = originalH;
+        v = originalV;
     }
 }
