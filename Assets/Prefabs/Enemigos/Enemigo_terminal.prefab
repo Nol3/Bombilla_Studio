@@ -78,10 +78,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.32, y: 1.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7112010471975322569
@@ -185,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   salud: 1
+  impacto: {fileID: 8300000, guid: a50189a71a40737499584b611c6249c4, type: 3}
 --- !u!61 &-8477726579398006892
 BoxCollider2D:
   m_ObjectHideFlags: 0

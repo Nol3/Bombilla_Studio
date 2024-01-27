@@ -28,5 +28,7 @@ public class RickTroll : MonoBehaviour
 
         rickTroll.SetActive(false);
         rickTroll1.SetActive(false);
+
+        Destroy(gameObject);
     }
 }

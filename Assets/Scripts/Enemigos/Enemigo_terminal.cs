@@ -8,6 +8,7 @@ public class Enemigo_terminal : MonoBehaviour
     Transform Terminal;
     bool available = false;
     SpriteRenderer spriteRenderer;
+    [SerializeField]AudioClip impacto;
     //[SerializeField] float waitTime = 5.5f;
 
     void Start()
@@ -35,9 +36,10 @@ public class Enemigo_terminal : MonoBehaviour
     public void TakeDamage()
     {
         salud--;
+        AudioSource.PlayClipAtPoint(impacto, transform.position);
         if (salud <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.1f);
         }
     }
 

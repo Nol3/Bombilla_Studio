@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 1162360689067756157}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4116704830727805772
 SpriteRenderer:
@@ -177,8 +177,19 @@ MonoBehaviour:
   aim: {fileID: 1162360689067756157}
   bulletPrefab: {fileID: 3947639326319635906, guid: 9b74ecb8ae7d54e4e98a7ca99207d7a7, type: 3}
   fireRate: 1
-  Health: 5
-  PowerShot: 0
+  audioStart: {fileID: 8300000, guid: 01eef57e5605d55489a409a043b137d3, type: 3}
+  aceleron: 0
+  aumento_speed: 5
+  tiempo_aceleron: 5
+  masCadencia: 0
+  aumento_cadencia: 3
+  tiempo_cadencia: 5
+  decelerar: 0
+  disminucion_speed: 3
+  tiempo_decelerar: 5
+  invertido: 0
+  tiempo_invertido: 5
+  damage_viralidad: 10
 --- !u!1 &205000062606947482
 GameObject:
   m_ObjectHideFlags: 0

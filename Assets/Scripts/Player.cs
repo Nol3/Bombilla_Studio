@@ -15,10 +15,11 @@ public class Player : MonoBehaviour
     [SerializeField] Transform bulletPrefab;
     bool gunLoaded = true;
     [SerializeField] float fireRate = 1;
+    [SerializeField] AudioClip audioStart;
 
     //PowerUps
 
-        //Aceleron
+    //Aceleron
     public bool aceleron = false;
     [SerializeField] float aumento_speed = 5;
     [SerializeField] float tiempo_aceleron = 5;
@@ -38,12 +39,12 @@ public class Player : MonoBehaviour
     [SerializeField] float tiempo_invertido = 5;
 
     //Daño y viralidad
-    [SerializeField] float damage_viralidad = 10;    
+    [SerializeField] float damage_viralidad = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        AudioSource.PlayClipAtPoint(audioStart, transform.position);
     }
 
     // Update is called once per frame
