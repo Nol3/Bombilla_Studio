@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -403817324809036624}
   m_Layer: 0
   m_Name: StalkerSpawner
-  m_TagString: Spawners
+  m_TagString: Spawner_Stalker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,4 +98,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5579011650493201205, guid: 66cd73184582a22458a790ce34f2a138, type: 3}
-  ratio: 1
+  tiempo: 1
