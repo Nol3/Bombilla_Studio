@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Spawners
+  - Terminal
+  - Enemigo_terminal
   layers:
   - Default
   - TransparentFX

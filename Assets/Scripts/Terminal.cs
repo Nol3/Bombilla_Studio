@@ -7,6 +7,8 @@ public class Terminal : MonoBehaviour
     [SerializeField] float aumento = 10;
     public bool available = true;
     SpriteRenderer spriteRenderer;
+    [SerializeField] Transform Enemigo_terminal;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -31,7 +33,19 @@ public class Terminal : MonoBehaviour
             GameManager.Instance.viralidad += aumento;
             GameManager.Instance.ResetTerminals();
             available = false;
+        } 
+        if (collision.CompareTag("Enemigo_terminal") && available == true)
+        {
+            GameManager.Instance.ResetTerminals();
+            available = false;
+            StartCoroutine(WaitAndSetAvailable(5f));
         }
+    }
+
+    private IEnumerator WaitAndSetAvailable(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Destroy(FindFirstObjectByType<Enemigo_terminal>());
     }
 }
 
