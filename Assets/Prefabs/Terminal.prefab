@@ -28,11 +28,11 @@ Transform:
   m_GameObject: {fileID: 3878862623046934816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.05870843, y: -7.3814087, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6412, y: 0.6553, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4657773186850742441
 SpriteRenderer:
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.09443048, g: 0.9622642, b: 0.049020927, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6f4cc618675a627499bfda036fc083b2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.14, y: 3.76}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -100,7 +100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aumento: 10
   available: 1
-  gameManager: {fileID: -3543774190405666277, guid: 417d90db6d3e21645840f87cf99123c6, type: 3}
+  Enemigo_terminal: {fileID: 0}
+  apagada: {fileID: -8306209766362290445, guid: 08e4cd273632a3d4cacb696c6f56534b, type: 3}
+  encendida: {fileID: 21300000, guid: 6f4cc618675a627499bfda036fc083b2, type: 3}
 --- !u!61 &-8144037796243506937
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -135,15 +137,15 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.12324095, y: -0.84413356}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 4.14, y: 3.76}
+    newSize: {x: 4.14, y: 3.76}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.8239846, y: 1.6270701}
   m_EdgeRadius: 0

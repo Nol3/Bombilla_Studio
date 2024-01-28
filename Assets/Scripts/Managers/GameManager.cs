@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 
     public int time = 0;
     public bool gameover;
-    public float dificultad = 1;
     //Gestión viralidad
     public float viralidad = 95; // con la que se empieza, la podemos cambiar
     public float viralMax = 100; // La máxima, el tope
@@ -30,6 +29,10 @@ public class GameManager : MonoBehaviour
     public float enemy_speed = 1;
     [SerializeField] int time_realentizar = 5;
 
+    //Gestion de la dificultad
+    public float dificultad = 1;
+    public int time_dificultad = 10;
+
     void Awake()
     {
         if (Instance == null)
@@ -47,9 +50,11 @@ public class GameManager : MonoBehaviour
         arrayTerminal = GameObject.FindGameObjectsWithTag("Terminal");
         StartCoroutine(Contador());
         StartCoroutine(CaidaViralidad());
+        StartCoroutine(SubirDificultald());
     }
     void Update ()
     {
+        enemy_speed = enemy_speed * dificultad;
         if (realentizar == true)
         {
             realentizar = false;
@@ -122,6 +127,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("2-Selector");
     }
+
+    public void Selector_Instrucciones()
+    {
+        SceneManager.LoadScene("3-Instrucciones");
+    }
+
     public void Instrucciones_Game()
     {
         SceneManager.LoadScene("4-Game");
@@ -130,5 +141,15 @@ public class GameManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene("1-Inicio");
+    }
+
+    //Gestion de la dificultad
+    IEnumerator SubirDificultald()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(time_dificultad);
+            dificultad *= 1.5f;
+        }
     }
 }
