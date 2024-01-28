@@ -15,6 +15,7 @@ public class EnemyFace : MonoBehaviour
        {
             RandoMemeNu = Random.Range(0, PosiblesMemes.Length - 1);
             ImageMeme.GetComponent<SpriteRenderer>().sprite = PosiblesMemes[RandoMemeNu];
+            SpriteRenderer.sprite.transform.localScale = new Vector3(512, 512, 512);
        }
     }
 }
