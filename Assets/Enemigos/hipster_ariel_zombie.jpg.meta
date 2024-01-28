@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hipster_ariel_zombie_0: -8995041469645168278
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mucho_texto_0: 2089248569563699951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

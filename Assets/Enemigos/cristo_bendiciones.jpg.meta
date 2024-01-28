@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cristo_bendiciones_0: -7566495392551965881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

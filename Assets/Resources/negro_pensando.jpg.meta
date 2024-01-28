@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      negro_pensando_0: -1071953159940691755
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "pokemon_espa\xF1a_0": -4863982510395979272
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

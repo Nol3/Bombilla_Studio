@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      anime_girls_cry_0: -6645542781177814919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

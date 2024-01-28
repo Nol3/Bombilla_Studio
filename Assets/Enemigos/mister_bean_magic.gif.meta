@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mister_bean_magic_0: -4239542370310474462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

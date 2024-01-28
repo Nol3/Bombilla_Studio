@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mentira_template_0: -4811624950907341809
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

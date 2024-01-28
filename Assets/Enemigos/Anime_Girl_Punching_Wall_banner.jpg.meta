@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Anime_Girl_Punching_Wall_banner_0: 178927839835039668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

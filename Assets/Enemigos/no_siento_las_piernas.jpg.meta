@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      no_siento_las_piernas_0: -2555129632126394245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

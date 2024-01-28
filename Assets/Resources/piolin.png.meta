@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      piolin_0: -910130642139254148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

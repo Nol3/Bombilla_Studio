@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      age_of_empire_king_0: -3375957246657776293
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

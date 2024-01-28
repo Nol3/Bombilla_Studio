@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      among_us_emergency_meeting_0: 1121889894231005222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

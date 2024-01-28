@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      saint_perra_0: 1063866415705671875
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

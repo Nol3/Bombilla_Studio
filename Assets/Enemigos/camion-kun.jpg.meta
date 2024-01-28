@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      camion-kun_0: 7265260435246527224
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

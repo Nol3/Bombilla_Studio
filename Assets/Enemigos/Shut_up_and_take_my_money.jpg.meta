@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Shut_up_and_take_my_money_0: -3742474886833082650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

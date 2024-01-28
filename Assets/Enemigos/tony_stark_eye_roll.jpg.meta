@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tony_stark_eye_roll_0: -488526550336369950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

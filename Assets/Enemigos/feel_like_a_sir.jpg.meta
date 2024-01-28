@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      feel_like_a_sir_0: -3989049028578093627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

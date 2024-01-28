@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      leonardo_dicaprio_2_0: 3425385112664889208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

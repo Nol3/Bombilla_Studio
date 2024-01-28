@@ -164,7 +164,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fuck_yeah_0: 1020681270872268737
+      fuck_yeah_1: 6750671296736726053
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

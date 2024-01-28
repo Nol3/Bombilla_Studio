@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      batman_slap_0: 6581372439383996542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

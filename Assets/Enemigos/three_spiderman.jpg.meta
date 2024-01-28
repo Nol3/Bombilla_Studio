@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      three_spiderman_0: 5743330056064984756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

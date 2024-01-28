@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      guys_on_a_bus_0: 6706916523944513189
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

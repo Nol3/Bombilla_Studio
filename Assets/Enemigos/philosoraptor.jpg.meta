@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      philosoraptor_0: -4077380839613617783
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      haroldcat_0: -4765783566299310156
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

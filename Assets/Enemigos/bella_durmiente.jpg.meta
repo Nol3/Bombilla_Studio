@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bella_durmiente_0: -3663570540187219805
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

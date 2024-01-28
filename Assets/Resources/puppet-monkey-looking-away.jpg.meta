@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      puppet-monkey-looking-away_0: -6397301587924678321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

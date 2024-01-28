@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turquia_0: -8669474961057835274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      peor_que_la_muerte_0: 4746813779427842746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

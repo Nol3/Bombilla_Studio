@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EcR_KCLXQAAewfd_0: 1763191355940057015
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

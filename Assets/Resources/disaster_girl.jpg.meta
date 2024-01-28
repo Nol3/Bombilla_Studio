@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      disaster_girl_0: 789311156796599880
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

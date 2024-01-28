@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Buff_Doge_0: 8596469985510318341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

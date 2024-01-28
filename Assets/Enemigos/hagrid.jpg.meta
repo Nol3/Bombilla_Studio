@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hagrid_0: 742440546820591731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

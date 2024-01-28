@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Alvar00.33.22_0: 3971851988013810839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

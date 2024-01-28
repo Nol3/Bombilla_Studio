@@ -18,11 +18,6 @@ public class MySceneManager : MonoBehaviour
         SceneManager.LoadScene("3-Instrucciones");
     }
 
-    public void Instrucciones_Game()
-    {
-        SceneManager.LoadScene("4-Game");
-    }
-
     public void Replay()
     {
         SceneManager.LoadScene("1-Inicio");

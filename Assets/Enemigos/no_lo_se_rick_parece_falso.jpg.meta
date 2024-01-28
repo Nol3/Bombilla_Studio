@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      no_lo_se_rick_parece_falso_0: 2294272454123083859
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

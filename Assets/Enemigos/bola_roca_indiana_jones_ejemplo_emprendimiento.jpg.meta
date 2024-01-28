@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bola_roca_indiana_jones_ejemplo_emprendimiento_0: 4416393083730712574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

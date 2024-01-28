@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      juego_de_palabras_0: -7675846574836455153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
