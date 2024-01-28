@@ -112,6 +112,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -272,7 +284,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Coraz\xF3n2,4_0": 441452485360299153
+      "Coraz\xF3n2,4_1": 4964144248958077358
+      "Coraz\xF3n2,4_2": -8703335755995460164
+      "Coraz\xF3n2,4_3": 3429922096600387132
+      "Coraz\xF3n2,4_4": -888084182192868536
+      "Coraz\xF3n2,4_5": -7751451368420576069
+      "Coraz\xF3n2,4_6": 3861781126394068708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
