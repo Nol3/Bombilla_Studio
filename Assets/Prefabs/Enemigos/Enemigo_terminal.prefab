@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salud: 1
   impacto: {fileID: 8300000, guid: a50189a71a40737499584b611c6249c4, type: 3}
+  speed: 2
 --- !u!61 &-8477726579398006892
 BoxCollider2D:
   m_ObjectHideFlags: 0

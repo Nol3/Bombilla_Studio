@@ -223,7 +223,7 @@ Transform:
   - {fileID: 4490331922439620237}
   - {fileID: 7119557134318799603}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8589970752222140916
 MonoBehaviour:
@@ -238,4 +238,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7112010471975322569, guid: d8d810158907a2b4cbaa5261c9e3ca70, type: 3}
-  tiempo: 1
+  tiempo: 10
