@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 809b0b3c18da4e44289a8304b8de6f28
+guid: 843593158635e5a4cb061289214c38f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5512786367971521475
-    second: 2mwc77_0
+      213: 7551071871341178678
+    second: pikachu_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2mwc77_0
+      name: pikachu_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c3fe816ef9518c40800000000000000
-      internalID: 5512786367971521475
+      spriteID: 63f2cb41cdbcac860800000000000000
+      internalID: 7551071871341178678
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      2mwc77_0: 5512786367971521475
+      pikachu_0: 7551071871341178678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
