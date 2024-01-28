@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +16,7 @@ public class Enemigo_terminal : MonoBehaviour
 
     void Start()
     {
-        Terminal = FindFirstObjectByType<Terminal>().transform;
+        Terminal = GameObject.FindWithTag("Terminal").transform;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -25,8 +26,9 @@ public class Enemigo_terminal : MonoBehaviour
         //movimiento del enemigo
         //Vector2 direccion = Terminal.position - transform.position;
         //transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
-        Vector2 direction = (player.position - transform.position).normalized;
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        Vector2 direction = (Terminal.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, Terminal.position, speed * Time.deltaTime);
+
 
         //para comprobar si las terminales están desactivadas
         if (available == false)
