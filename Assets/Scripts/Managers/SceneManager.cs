@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,4 +27,8 @@ public class SceneManager : MonoBehaviour
         SceneManager.LoadScene("1-Inicio");
     }
 
+    internal static void LoadScene(string v)
+    {
+        throw new NotImplementedException();
+    }
 }

@@ -692,7 +692,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dungeon101_Tileset_0: -8600793269380283575
+      Dungeon101_Tileset_1: -4667858212780413639
+      Dungeon101_Tileset_10: -3178402564504034511
+      Dungeon101_Tileset_11: 5827979814464432722
+      Dungeon101_Tileset_12: -1893003033105923402
+      Dungeon101_Tileset_13: 1163527690437207666
+      Dungeon101_Tileset_14: 217713006304698712
+      Dungeon101_Tileset_15: -709368974068793438
+      Dungeon101_Tileset_16: 37226586016152939
+      Dungeon101_Tileset_17: 4460752293378230910
+      Dungeon101_Tileset_18: 1388991709032694552
+      Dungeon101_Tileset_19: 202243553539041878
+      Dungeon101_Tileset_2: 1547663325396401360
+      Dungeon101_Tileset_20: 8894729570400545505
+      Dungeon101_Tileset_21: 7423235120316374980
+      Dungeon101_Tileset_22: -3537350001325019435
+      Dungeon101_Tileset_23: -8490923585126372008
+      Dungeon101_Tileset_3: -6776828293088074725
+      Dungeon101_Tileset_4: -3385062080257622855
+      Dungeon101_Tileset_5: 516445383321208133
+      Dungeon101_Tileset_6: 4075433755573652548
+      Dungeon101_Tileset_7: -952269880747949829
+      Dungeon101_Tileset_8: -2691209108990904887
+      Dungeon101_Tileset_9: -8864888616156676926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
