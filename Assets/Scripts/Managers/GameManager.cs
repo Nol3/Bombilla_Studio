@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(Realentizar_enemigos());
 
         }
-        if (viralidad == 0) //inmortal es para poder recorrer el mapa sin morirme
+        if (viralidad < 0)
         {
             SceneManager.LoadScene("5.2-Olvido");
         }
