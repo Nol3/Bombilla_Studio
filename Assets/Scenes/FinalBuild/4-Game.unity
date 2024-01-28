@@ -5622,7 +5622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obj_Text_Top: {fileID: 0}
   Obj_Text_Bot: {fileID: 0}
-  MemeSprite: {fileID: 0}
+  MemeSprite: {fileID: 1768112277}
 --- !u!4 &446554392
 Transform:
   m_ObjectHideFlags: 0
@@ -8996,6 +8996,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6931899701689754427, guid: b49a798835938c543bca8a8dca858382, type: 3}
   m_PrefabInstance: {fileID: 1748941532}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1768112277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1948173998608539532, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+  m_PrefabInstance: {fileID: 1255716384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1796376461
 PrefabInstance:
   m_ObjectHideFlags: 0
