@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7043340735047636633}
   - component: {fileID: 7803500811243043821}
   - component: {fileID: -8104953894225850087}
-  - component: {fileID: 6942564148022051361}
   m_Layer: 0
   m_Name: Decelerar
   m_TagString: Untagged
@@ -145,25 +144,3 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3947246, y: 0.4758281}
   m_EdgeRadius: 0
---- !u!95 &6942564148022051361
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4171835329575919399}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe7e16a221d804245ac70597931f68ff, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
