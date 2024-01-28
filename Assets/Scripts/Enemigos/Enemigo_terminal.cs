@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class Enemigo_terminal : MonoBehaviour
 {
     [SerializeField]int salud = 1;
     Transform Terminal;
+    Transform[] terminales;
+    Transform terminalSeleccionada;
     bool available = false;
     SpriteRenderer spriteRenderer;
     [SerializeField]AudioClip impacto;
@@ -15,7 +18,19 @@ public class Enemigo_terminal : MonoBehaviour
 
     void Start()
     {
-        Terminal = FindFirstObjectByType<Terminal>().transform;
+        Terminal = GameObject.FindWithTag("Terminal").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        GameObject[] terminalesObj = GameObject.FindGameObjectsWithTag("Terminal");
+        terminales = new Transform[terminalesObj.Length];
+        for (int i = 0; i < terminalesObj.Length; i++)
+        {
+            terminales[i] = terminalesObj[i].transform;
+        }
+
+        terminalSeleccionada = terminales[UnityEngine.Random.Range(0, terminales.Length)];
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -25,8 +40,9 @@ public class Enemigo_terminal : MonoBehaviour
         //movimiento del enemigo
         //Vector2 direccion = Terminal.position - transform.position;
         //transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
-        Vector2 direction = (player.position - transform.position).normalized;
-        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        Vector2 direction = (terminalSeleccionada.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, terminalSeleccionada.position, speed * Time.deltaTime);
+
 
         //para comprobar si las terminales están desactivadas
         if (available == false)

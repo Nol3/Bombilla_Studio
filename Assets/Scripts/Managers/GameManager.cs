@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    public bool inmortal = false;
     public int time = 0;
     public bool gameover;
     //Gestión viralidad
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(Realentizar_enemigos());
 
         }
-        if (viralidad == 0) 
+        if (viralidad == 0 && inmortal == false) //inmortal es para poder recorrer el mapa sin morirme
         {
             SceneManager.LoadScene("5.2-Olvido");
         }
