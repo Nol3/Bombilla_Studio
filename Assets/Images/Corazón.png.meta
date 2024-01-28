@@ -236,7 +236,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Coraz\xF3n_0": -6370324217970633093
+      "Coraz\xF3n_1": -6616814336568674189
+      "Coraz\xF3n_2": 1072413004810796849
+      "Coraz\xF3n_3": 4557740949315397938
+      "Coraz\xF3n_4": 711402212820525721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
