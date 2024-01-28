@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512141122338443012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.62, z: 0}
+  m_LocalPosition: {x: -0.045, y: 0.925, z: 0}
   m_LocalScale: {x: 0.5702, y: 0.6132, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73,15 +73,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6370324217970633093, guid: e7e9e1ed5e6524f478c4088f01f9d8c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e7e9e1ed5e6524f478c4088f01f9d8c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.32, y: 1.21}
+  m_Size: {x: 1.55, y: 1.3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7112010471975322569
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8401179208185435487}
   - component: {fileID: -8477726579398006892}
   - component: {fileID: 5438154818622550157}
+  - component: {fileID: 1745329356744096033}
   m_Layer: 0
   m_Name: Enemigo_terminal
   m_TagString: enemigo
@@ -118,7 +119,7 @@ Transform:
   m_Children:
   - {fileID: 5982999878696266834}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1299646722564089390
 SpriteRenderer:
@@ -161,8 +162,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.97650623, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -224,7 +225,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -260,3 +261,64 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1745329356744096033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112010471975322569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a143a00753e3146b861589a03247d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosiblesMemes:
+  - {fileID: -3375957246657776293, guid: e16a7af1a9a801f4d9b401c659e8d615, type: 3}
+  - {fileID: 1121889894231005222, guid: 91c615a2e3689ef4ca4fee62d462c6ef, type: 3}
+  - {fileID: -9047283693872299944, guid: c959524259211ab489ac77fa2f973b18, type: 3}
+  - {fileID: 178927839835039668, guid: 9f4b078ef0b170a43b228d298985b7fb, type: 3}
+  - {fileID: 6581372439383996542, guid: ed96fb8722cad7d4db1cf5eae3e0134a, type: 3}
+  - {fileID: -3663570540187219805, guid: e2a843c18eae14546a672ab2ba0f42b7, type: 3}
+  - {fileID: 4416393083730712574, guid: 6b0e9da4afc066443b67b8b8cefebc80, type: 3}
+  - {fileID: 8375951219228430643, guid: 7696327ff23e64144bb1c12b04facec0, type: 3}
+  - {fileID: -1708302014359117832, guid: fdbc3ab0ba934a64aa1008855ef36acf, type: 3}
+  - {fileID: 7265260435246527224, guid: ecf365fc6f168dd4487d28f6420156dc, type: 3}
+  - {fileID: -7566495392551965881, guid: ec3061422708c2941ae2e344ea8a897b, type: 3}
+  - {fileID: 1763191355940057015, guid: aa9b263f11e47f24eb34d3cfc5ae5810, type: 3}
+  - {fileID: 7442842077773854467, guid: 5b6132d8e39b6f54b9d34c1fdde0a94d, type: 3}
+  - {fileID: -3989049028578093627, guid: 8a7e209f170994147adf53b9239e5c7a, type: 3}
+  - {fileID: -5872041722213602917, guid: 5223957501839254a8d3f8ff3c87cfd5, type: 3}
+  - {fileID: 1020681270872268737, guid: b8dadd67959c1ba40a111692fe6bd0ec, type: 3}
+  - {fileID: 6706916523944513189, guid: f71c3fe7555926b44b98260b7a6c2642, type: 3}
+  - {fileID: -5113076138818064978, guid: e66699dea3764a34dbcc8f9cbc6cf2ff, type: 3}
+  - {fileID: 742440546820591731, guid: d26311f880459a5469cefa3c72f5f2cc, type: 3}
+  - {fileID: -1169116927414089019, guid: f70f3829b336e8945a8512b514fa0d9d, type: 3}
+  - {fileID: 8291986925141046684, guid: 5cb4658323412114eb753c73137f0067, type: 3}
+  - {fileID: -8995041469645168278, guid: 2f651dabd77593542ae9ee4b922a59c8, type: 3}
+  - {fileID: -1771152570515333665, guid: 6446d2af9695b4745a1fedce56d32bdb, type: 3}
+  - {fileID: -7675846574836455153, guid: bd5c234ca2a53fb4da97c051e3ca680d, type: 3}
+  - {fileID: 6068770374246698093, guid: 6f980a4afb616534e8489c59c5ae0a28, type: 3}
+  - {fileID: 3425385112664889208, guid: 4971a4b599beaed43a097000b56a581a, type: 3}
+  - {fileID: -2956548498223220016, guid: 2a48e1d38f091da45bf9892cd3b7e06e, type: 3}
+  - {fileID: 5906515036753207372, guid: dceacd1d9f743424d9009cc82e4842ac, type: 3}
+  - {fileID: -4811624950907341809, guid: 4541a51162c36e042b47f4b526bd5318, type: 3}
+  - {fileID: -4239542370310474462, guid: e21e7829af822d947a4fc3561d6f6e9e, type: 3}
+  - {fileID: 2089248569563699951, guid: da0bcd9c8856d344fa8aeddeca66da66, type: 3}
+  - {fileID: 2294272454123083859, guid: a60f7e9f722627d45aaae7f41b81c71d, type: 3}
+  - {fileID: -2555129632126394245, guid: 23e174d84870543439d2faf7695d7370, type: 3}
+  - {fileID: -8305783031427686044, guid: 35ea3f0b287c40142bd28af2d1eb2b79, type: 3}
+  - {fileID: -5584852559148040732, guid: babd92f04a9838240b7591ccad579477, type: 3}
+  - {fileID: 4746813779427842746, guid: 7dffc14d74c90a346ad9cd4d5b8d68a4, type: 3}
+  - {fileID: -4077380839613617783, guid: b8be662ab79149b4697351865323dad1, type: 3}
+  - {fileID: -4863982510395979272, guid: 9dd2c0b37b6994c4bb450f34c081f617, type: 3}
+  - {fileID: 1748304815149698678, guid: 4ccf10ed56be5eb4b9712970e86ac838, type: 3}
+  - {fileID: 1063866415705671875, guid: d3e951d849f33a949a1c32e25bd3e22d, type: 3}
+  - {fileID: -3742474886833082650, guid: 4906b984c7ccb7e428fdd05ebc2d8516, type: 3}
+  - {fileID: 5743330056064984756, guid: b2d54840af6940d44a0395bf78c06a31, type: 3}
+  - {fileID: -488526550336369950, guid: 6377a90533cfcbf4388b905ce059ccdf, type: 3}
+  - {fileID: -8669474961057835274, guid: d66bd3fa83574b94ead8f0f52b61c7ac, type: 3}
+  - {fileID: -3507420321877782706, guid: b97820e131779484c9f89d538849c5a4, type: 3}
+  - {fileID: 5415246831040389842, guid: 806d1e24902308d4680ee8a8726b1ac5, type: 3}
+  ImageMeme: {fileID: 7112010471975322569}
+  RandoMemeNu: 0
