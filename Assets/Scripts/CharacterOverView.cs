@@ -47,20 +47,19 @@ public class CharacterOverView : MonoBehaviour
     }
 
   public void SumbitMeme()
-{
-    PlayerPrefs.SetString("top_text", Obj_Text_Top.text);
-    PlayerPrefs.SetString("bot_text", Obj_Text_Bot.text);
-    PlayerPrefs.SetString("meme_name", FinalMeme.sprite.name);
-    PlayerPrefs.Save();
-    LoadSceneGame();
-        //StartCoroutine(LoadSceneGameAfterDelay(1));
+    {
+        PlayerPrefs.SetString("top_text", Obj_Text_Top.text);
+        PlayerPrefs.SetString("bot_text", Obj_Text_Bot.text);
+        PlayerPrefs.SetString("meme_name", FinalMeme.sprite.name);
+        PlayerPrefs.Save();
+        StartCoroutine(LoadSceneGameAfterDelay(1));
     }
 
-//private IEnumerator LoadSceneGameAfterDelay(float delay)
-//{
-//    yield return new WaitForSeconds(delay);
-//    LoadSceneGame();
-//}
+    private IEnumerator LoadSceneGameAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        LoadSceneGame();
+    }
 
     public void LoadSceneGame()
     {
