@@ -6,6 +6,7 @@ public class Stalker : MonoBehaviour
 {
     [SerializeField]int salud = 1;
     Transform player;
+    public float speed = 1f;
 
     void Start()
     {
@@ -17,8 +18,10 @@ public class Stalker : MonoBehaviour
 
     void Update()
     {
-        Vector2 direccion = player.position - transform.position;
-        transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
+        //Vector2 direccion = player.position - transform.position;
+        //transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
+        Vector2 direction = (player.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
