@@ -26,9 +26,10 @@ public class CharacterOverView : MonoBehaviour
         string ButtonName = EventSystem.current.currentSelectedGameObject.name;
         if (ButtonName == "Top_Text")
         {
-            InputFieldBot.SetActive(false);
             InputFieldTop.SetActive(true);
+            InputFieldBot.SetActive(false);
             Obj_Text_Top.text = Display_Top.text;
+            Debug.Log("S");
 
         }
         else if (ButtonName == "Bot_Text")
@@ -36,7 +37,7 @@ public class CharacterOverView : MonoBehaviour
             InputFieldBot.SetActive(true);
             InputFieldTop.SetActive(false);
             Obj_Text_Bot.text = Display_Bot.text;
-
+            Debug.Log("w");
         }
     }
     

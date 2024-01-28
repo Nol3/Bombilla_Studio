@@ -714,8 +714,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 91.9
-  m_fontSizeBase: 91.9
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -889,8 +889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334b8f2458d934f4f8662c0753e92634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputFieldBot: {fileID: 592560590107427966}
-  InputFieldTop: {fileID: 556813226985594373}
+  InputFieldBot: {fileID: 556813226985594373}
+  InputFieldTop: {fileID: 592560590107427966}
   Obj_Text_Top: {fileID: 5089172270766010309}
   Obj_Text_Bot: {fileID: 282187937943693048}
   Display_Top: {fileID: 7065030635620814960}
@@ -955,7 +955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &592560590107427966
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &664758678843795681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3204,8 +3204,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 91.9
-  m_fontSizeBase: 91.9
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4758,9 +4758,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6763196639972417730}
+      - m_Target: {fileID: 513309481465175208}
         m_TargetAssemblyTypeName: CharacterOverView, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: SumbitMeme
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
