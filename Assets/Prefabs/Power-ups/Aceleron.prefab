@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7931575586421347691}
   - component: {fileID: 6470780646052318555}
   - component: {fileID: -2324030720222308434}
+  - component: {fileID: 8944991679100407274}
   m_Layer: 0
   m_Name: Aceleron
   m_TagString: Untagged
@@ -144,3 +145,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40690c6d60bc6e49be437f00a82d9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &8944991679100407274
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4073293580640942207}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 980771e07cb83014eb0d5e3d3312262b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
