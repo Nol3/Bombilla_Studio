@@ -20,6 +20,7 @@ public class CharacterOverView : MonoBehaviour
     [Space(10)]
     [Header("Text")]
     public Image FinalMeme;
+    public GameObject GameObject;
 
     public void InsertText()
     {
@@ -45,6 +46,8 @@ public class CharacterOverView : MonoBehaviour
     {
         Obj_Text_Top.text = "Texto de Arriba";
         Obj_Text_Bot.text = "Texto de Abajo";
+        FinalMeme.sprite = null;
+        GameObject.GetComponent<FulllManager>().Selected = false;
     }
 
   public void SumbitMeme()
