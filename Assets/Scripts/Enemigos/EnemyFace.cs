@@ -13,7 +13,7 @@ public class EnemyFace : MonoBehaviour
     {
        for (int i = 0; i < PosiblesMemes.Length; i++)
        {
-            RandoMemeNu= PosiblesMemes.Length - 1;
+            RandoMemeNu = Random.Range(0, PosiblesMemes.Length - 1);
             ImageMeme.GetComponent<SpriteRenderer>().sprite = PosiblesMemes[RandoMemeNu];
        }
     }
