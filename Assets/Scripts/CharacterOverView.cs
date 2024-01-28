@@ -52,19 +52,18 @@ public class CharacterOverView : MonoBehaviour
     PlayerPrefs.SetString("bot_text", Obj_Text_Bot.text);
     PlayerPrefs.SetString("meme_name", FinalMeme.sprite.name);
     PlayerPrefs.Save();
-    StartCoroutine(LoadSceneGameAfterDelay(1));
-}
-
-private IEnumerator LoadSceneGameAfterDelay(float delay)
-{
-    yield return new WaitForSeconds(delay);
     LoadSceneGame();
-}
+        //StartCoroutine(LoadSceneGameAfterDelay(1));
+    }
+
+//private IEnumerator LoadSceneGameAfterDelay(float delay)
+//{
+//    yield return new WaitForSeconds(delay);
+//    LoadSceneGame();
+//}
 
     public void LoadSceneGame()
     {
-        Debug.Log("cosa");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Scenes/3-Lobby central");
     }
-
 }
