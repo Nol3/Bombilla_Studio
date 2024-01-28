@@ -5,7 +5,7 @@ using UnityEngine;
 public class StalkerSpawner : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] int tiempo = 1;
+    [SerializeField] int tiempo = 5;
 
     void Start () 
     {
@@ -16,7 +16,7 @@ public class StalkerSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(tiempo);
+            yield return new WaitForSeconds(tiempo*(1/GameManager.Instance.dificultad));
             Instantiate(enemyPrefab, transform.position, Quaternion.identity);
         }
     }

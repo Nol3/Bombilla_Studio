@@ -8,19 +8,25 @@ public class Enemigo_terminal : MonoBehaviour
     Transform Terminal;
     bool available = false;
     SpriteRenderer spriteRenderer;
+    [SerializeField]AudioClip impacto;
+    Transform player;
+    public float speed = 1f;
     //[SerializeField] float waitTime = 5.5f;
 
     void Start()
     {
         Terminal = FindFirstObjectByType<Terminal>().transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         //movimiento del enemigo
-        Vector2 direccion = Terminal.position - transform.position;
-        transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
+        //Vector2 direccion = Terminal.position - transform.position;
+        //transform.position += (Vector3)direccion.normalized * Time.deltaTime * GameManager.Instance.enemy_speed;
+        Vector2 direction = (player.position - transform.position).normalized;
+        transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
         //para comprobar si las terminales están desactivadas
         if (available == false)
@@ -35,9 +41,10 @@ public class Enemigo_terminal : MonoBehaviour
     public void TakeDamage()
     {
         salud--;
+        AudioSource.PlayClipAtPoint(impacto, transform.position);
         if (salud <= 0)
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.1f);
         }
     }
 
