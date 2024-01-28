@@ -2730,16 +2730,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1212668750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc2ef17b5e221249817d0d5dbc68fcb, type: 3}
+  m_Script: {fileID: 11500000, guid: 334b8f2458d934f4f8662c0753e92634, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InputFieldBot: {fileID: 421572220}
-  InputFieldTop: {fileID: 1666451285}
-  Obj_Text_Top: {fileID: 1454432457}
-  Obj_Text_Bot: {fileID: 1549794516}
-  Display_Top: {fileID: 1666451287}
-  Display_Bot: {fileID: 421572222}
-  FinalMeme: {fileID: 862802917}
+  InputFieldBot: {fileID: 0}
+  InputFieldTop: {fileID: 0}
+  Obj_Text_Top: {fileID: 0}
+  Obj_Text_Bot: {fileID: 0}
+  Display_Top: {fileID: 0}
+  Display_Bot: {fileID: 0}
+  FinalMeme: {fileID: 0}
 --- !u!224 &1212668752
 RectTransform:
   m_ObjectHideFlags: 0
