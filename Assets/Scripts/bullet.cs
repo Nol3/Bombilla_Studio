@@ -30,7 +30,6 @@ public class bullet : MonoBehaviour
             {
                 seguidor.TakeDamage();
             }
-            Debug.Log("E");
             Destroy(gameObject);
         }
     }

@@ -127,6 +127,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("2-Selector");
     }
+
+    public void Selector_Instrucciones()
+    {
+        SceneManager.LoadScene("3-Instrucciones");
+    }
+
     public void Instrucciones_Game()
     {
         SceneManager.LoadScene("4-Game");
