@@ -64,6 +64,6 @@ public class CharacterOverView : MonoBehaviour
 
     public void LoadSceneGame()
     {
-        SceneManager.LoadScene("Scenes/3-Lobby central");
+        SceneManager.LoadScene("Scenes/FinalBuild/4-Game");
     }
 }
