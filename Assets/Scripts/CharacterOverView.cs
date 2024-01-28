@@ -42,8 +42,8 @@ public class CharacterOverView : MonoBehaviour
     
     public void ResetText()
     {
-        Obj_Text_Top.text = "";
-        Obj_Text_Bot.text = "";
+        Obj_Text_Top.text = "Texto de Arriba";
+        Obj_Text_Bot.text = "Texto de Abajo";
     }
 
   public void SumbitMeme()
