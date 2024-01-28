@@ -31,7 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1162360689067756157}
   - {fileID: 4471163066315646294}
@@ -125,7 +125,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.054615617, y: -0.100417614}
   m_SpriteTilingProperty:
     border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
     pivot: {x: 0.5, y: 0.5}
@@ -135,7 +135,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 2.7910588, y: 2.46867}
   m_EdgeRadius: 0
 --- !u!50 &6775319470675148265
 Rigidbody2D:
@@ -179,7 +179,7 @@ MonoBehaviour:
   speed: 5
   aim: {fileID: 1162360689067756157}
   bulletPrefab: {fileID: 3947639326319635906, guid: 9b74ecb8ae7d54e4e98a7ca99207d7a7, type: 3}
-  fireRate: 1
+  fireRate: 2
   audioStart: {fileID: 8300000, guid: 01eef57e5605d55489a409a043b137d3, type: 3}
   aceleron: 0
   aumento_speed: 5
@@ -207,7 +207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Obj_Text_Top: {fileID: 0}
   Obj_Text_Bot: {fileID: 0}
-  MemeSprite: {fileID: 0}
+  MemeSprite: {fileID: 4699814997272899230}
 --- !u!1 &205000062606947482
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +511,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1948173998608539532, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948173998608539532, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1948173998608539532, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2537161231237919755, guid: f144f8b42b564634daa916439c9b701e, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -596,6 +608,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+--- !u!114 &4699814997272899230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1948173998608539532, guid: f144f8b42b564634daa916439c9b701e, type: 3}
+  m_PrefabInstance: {fileID: 6498787964879368466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6559368529393768497 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 87780423422421283, guid: f144f8b42b564634daa916439c9b701e, type: 3}
