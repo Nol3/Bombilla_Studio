@@ -2,8 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Asegúrate de tener esta línea
 
-public class SceneManager : MonoBehaviour
+public class MySceneManager : MonoBehaviour
 {
     //Manejo de escenas
 
@@ -25,15 +26,5 @@ public class SceneManager : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene("1-Inicio");
-    }
-
-    internal static void LoadScene(string v)
-    {
-        throw new NotImplementedException();
-    }
-
-    internal static void LoadScene(int v)
-    {
-        throw new NotImplementedException();
     }
 }
