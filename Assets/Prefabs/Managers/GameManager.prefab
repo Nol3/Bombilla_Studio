@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-3543774190405666277
 MonoBehaviour:
@@ -44,10 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e202cc6d2a4da9347ba023cb80aaa943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inmortal: 0
   time: 30
   gameover: 0
-  dificultad: 1
   viralidad: 95
   viralMax: 100
   viralLosing: 10
   viralBurning: 10
+  tiempo_burning: 5
+  frecuencia: 1
+  disminucion: 1
+  realentizar: 0
+  enemy_speed: 1
+  time_realentizar: 5
+  dificultad: 1
+  time_dificultad: 10

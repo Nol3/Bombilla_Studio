@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
     GameObject[] arrayTerminal;
 
     //Caida viralidad
-    float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
-    float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
+    [SerializeField] float frecuencia = 0.1f; //cada cuantos segundos va a perder viralidad "disminucion"
+    [SerializeField] float disminucion = 1;   // cuanto cae la viralidad cada "frecuencia" segundos
 
     //Velocidad enemiga
     public bool realentizar = false;
