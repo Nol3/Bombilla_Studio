@@ -20,7 +20,7 @@ public class Portal : MonoBehaviour
         {
             GuardarVariables();
             GameManager.Instance.ResetTerminals();
-            SceneManager.LoadScene("Zona1");
+            SceneManager.LoadScene("4.1-Zona1");
         }
     }
 
