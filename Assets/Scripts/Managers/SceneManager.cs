@@ -31,4 +31,9 @@ public class SceneManager : MonoBehaviour
     {
         throw new NotImplementedException();
     }
+
+    internal static void LoadScene(int v)
+    {
+        throw new NotImplementedException();
+    }
 }
