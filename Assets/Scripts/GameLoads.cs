@@ -23,6 +23,4 @@ public class GameLoads : MonoBehaviour
         MemeSprite.sprite = loadedImage;
 
     }
-
-
 }
