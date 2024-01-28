@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalBuild/2-Selector.unity
     guid: 360f5c1a2fe520d4fb3afeaf6ef761bb
   - enabled: 1
-    path: Assets/Scenes/FinalBuild/3-Instrucciones.unity
-    guid: e43db1ce2b0ab8045b503a881038678c
-  - enabled: 1
     path: Assets/Scenes/FinalBuild/4-Game.unity
     guid: 514c3161159768a488b88d75c17f8af2
+  - enabled: 1
+    path: Assets/Scenes/FinalBuild/3-Instrucciones.unity
+    guid: e43db1ce2b0ab8045b503a881038678c
   - enabled: 1
     path: Assets/Scenes/FinalBuild/4.1-Zona1.unity
     guid: 76bb6cf562f36424dbf72da81ac45496
