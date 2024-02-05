@@ -643,9 +643,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 222650953}
+      - m_Target: {fileID: 222650957}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1176,9 +1176,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 292675834}
+      - m_Target: {fileID: 292675838}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1214,7 +1214,7 @@ RectTransform:
   m_GameObject: {fileID: 376647096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.225, y: 14.5, z: 1}
+  m_LocalScale: {x: -0.042187497, y: 14.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 210897127}
@@ -1222,7 +1222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.476, y: -7.7698}
+  m_AnchoredPosition: {x: -9.59, y: -7.7698}
   m_SizeDelta: {x: 0.4885, y: 1.0512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &376647098
@@ -1924,9 +1924,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558552344}
+      - m_Target: {fileID: 558552348}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2110,7 +2110,7 @@ RectTransform:
   m_GameObject: {fileID: 708644541}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.225, y: 14.5, z: 1}
+  m_LocalScale: {x: -0.042187497, y: 14.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 210897127}
@@ -2118,7 +2118,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9.48, y: -7.7698}
+  m_AnchoredPosition: {x: 9.56, y: -7.7698}
   m_SizeDelta: {x: 0.4885, y: 1.0512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &708644543
@@ -2736,9 +2736,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 931176375}
+      - m_Target: {fileID: 931176379}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2834,7 +2834,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1212668751}
         m_TargetAssemblyTypeName: CharacterOverView, Assembly-CSharp
-        m_MethodName: LoadSceneGame
+        m_MethodName: SumbitMeme
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4153,9 +4153,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1301820778}
+      - m_Target: {fileID: 1301820782}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4743,9 +4743,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1434598242}
+      - m_Target: {fileID: 1434598246}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5027,9 +5027,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1470232532}
+      - m_Target: {fileID: 1470232536}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5607,9 +5607,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1623079661}
+      - m_Target: {fileID: 1623079665}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5943,9 +5943,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1773826492}
+      - m_Target: {fileID: 1773826496}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6171,9 +6171,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1863292927}
+      - m_Target: {fileID: 1863292931}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6551,9 +6551,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1939733262}
+      - m_Target: {fileID: 1939733268}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6961,9 +6961,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2052102670}
+      - m_Target: {fileID: 2052102674}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7379,9 +7379,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2119594032}
+      - m_Target: {fileID: 2119594036}
         m_TargetAssemblyTypeName: ImageSelect, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Clicking
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

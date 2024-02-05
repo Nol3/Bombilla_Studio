@@ -30,7 +30,6 @@ public class CharacterOverView : MonoBehaviour
             InputFieldTop.SetActive(true);
             InputFieldBot.SetActive(false);
             Obj_Text_Top.text = Display_Top.text;
-            Debug.Log("S");
 
         }
         else if (ButtonName == "Bot_Text")
@@ -38,10 +37,9 @@ public class CharacterOverView : MonoBehaviour
             InputFieldBot.SetActive(true);
             InputFieldTop.SetActive(false);
             Obj_Text_Bot.text = Display_Bot.text;
-            Debug.Log("w");
         }
     }
-    
+
     public void ResetText()
     {
         Obj_Text_Top.text = "Texto de Arriba";
@@ -50,11 +48,15 @@ public class CharacterOverView : MonoBehaviour
         GameObject.GetComponent<FulllManager>().Selected = false;
     }
 
-  public void SumbitMeme()
+    public void SumbitMeme()
     {
         PlayerPrefs.SetString("top_text", Obj_Text_Top.text);
         PlayerPrefs.SetString("bot_text", Obj_Text_Bot.text);
         PlayerPrefs.SetString("meme_name", FinalMeme.sprite.name);
+        Debug.Log(PlayerPrefs.GetString("top_text"));
+        Debug.Log(PlayerPrefs.GetString("bot_text"));
+        Debug.Log(PlayerPrefs.GetString("meme_name"));
+
         PlayerPrefs.Save();
         StartCoroutine(LoadSceneGameAfterDelay(1));
     }
@@ -68,5 +70,6 @@ public class CharacterOverView : MonoBehaviour
     public void LoadSceneGame()
     {
         SceneManager.LoadScene("Scenes/FinalBuild/4-Game");
+        Debug.Log("t");
     }
 }
